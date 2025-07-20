@@ -1,0 +1,54 @@
+body {
+  background-color: black;
+  color: yellow;
+  font-family: "Courier New", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #000;
+  float: left;
+  padding: 20px;
+}
+
+.sidebar a {
+  color: blue;
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.alerta {
+  color: red;
+}
+
+.conteudo {
+  margin-left: 220px;
+  background-color: darkblue;
+  padding: 30px;
+}
+
+.contador {
+  color: red;
+  font-size: 20px;
+}
+
+.boas-vindas {
+  color: hotpink;
+}
+
+.noticia {
+  color: white;
+}
+
+.link-azul {
+  color: #00ccff;
+}
+
+.info {
+  font-size: 12px;
+  color: gray;
+}
