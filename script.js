@@ -1,7 +1,11 @@
-let etapaAtual = 1;
+let etapaAtual = 0;
+const etapas = document.querySelectorAll(".etapa");
 
 function proximo() {
-  document.getElementById("etapa" + etapaAtual).classList.add("hidden");
+  etapas[etapaAtual].classList.add("hidden");
   etapaAtual++;
-  document.getElementById("etapa" + etapaAtual).classList.remove("hidden");
+
+  if (etapaAtual < etapas.length) {
+    etapas[etapaAtual].classList.remove("hidden");
+  }
 }
