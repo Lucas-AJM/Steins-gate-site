@@ -1,52 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <title>Laboratório de Gadgets do Futuro</title>
-  <style>
-    body {
-      background-color: black;
-      color: yellow;
-      font-family: "Courier New", monospace;
-    }
-    .sidebar {
-      width: 200px;
-      float: left;
-      background: #000;
-      padding: 10px;
-    }
-    .sidebar a {
-      color: blue;
-      display: block;
-      margin-bottom: 10px;
-    }
-    .main {
-      margin-left: 220px;
-      background: darkblue;
-      color: yellow;
-      padding: 20px;
-    }
-    .contador {
-      color: red;
-      font-size: 24px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Para Você 💖</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="sidebar">
-    <a href="#">Página Superior</a>
-    <a href="#">Sobre Laboratório</a>
-    <a href="#">Gadgets do Futuro <span style="color:red;">(atualizado!!)</span></a>
-    <a href="#">Phenix BBS</a>
-    <a href="#">link</a>
-  </div>
-  <div class="main">
-    <h1>未来ガジェット研究所</h1>
-    <h2>PÁGINA INICIAL</h2>
-    <p>Você é o <span class="contador">0000000000328º</span> visitante do site</p>
-    <p>Bem-vindo ao PÁGINA INICIAL do Laboratório de Gadgets do Futuro</p>
-    <p style="color:white;">notícias de última hora</p>
-    <p style="color:white;">!!!fase 1 dos expansão do ocidental!!!</p>
-    <p><a href="#" style="color:lightblue;">atualização dos Gadgets do Futuro!</a></p>
-  </div>
+
+    <div class="container" id="tela1">
+        <h1>Esse site foi feito exclusivamente para você...</h1>
+        <button onclick="entrar()">💖 Sou eu</button>
+    </div>
+
+    <div class="container hidden" id="tela2">
+        <h1>Feliz Dia dos Namorados ❤️</h1>
+        <p>
+            Desde que você entrou na minha vida, tudo ficou diferente.
+            Mesmo longe, você consegue estar perto.
+            Obrigado por existir comigo.
+        </p>
+
+        <button onclick="surpresa()">Clique aqui se você quer saber o quanto eu te amo</button>
+
+        <div id="mensagemFinal" class="hidden">
+            <h2>Eu te amo infinito ♾️</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
