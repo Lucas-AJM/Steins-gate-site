@@ -3,51 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Para o meu amor 💌</title>
+  <title>Para o meu amor 💖</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="card">
-    <h1>Você quer abrir-lo? (≧◡≦)</h1>
-    <img src="assets/gatinho.png" class="cat">
+<div class="card">
 
-    <div class="buttons">
-      <button onclick="abrir()">Abra-o 💖</button>
-      <button class="no">Não, obrigado.</button>
+  <!-- ETAPA 1 -->
+  <div class="etapa" id="etapa1">
+    <h1>Feliz Dia dos Namorados 💕</h1>
+    <p>Eu preparei algo especial pra você...</p>
+    <button onclick="proximo()">Abrir 💌</button>
+  </div>
+
+  <!-- ETAPA 2 -->
+  <div class="etapa hidden" id="etapa2">
+    <h2>Uma cartinha pra você 💖</h2>
+    <p>
+      Desde que você entrou na minha vida,
+      tudo ficou mais bonito.
+      Eu faria esse site mil vezes só pra ver você sorrir.
+    </p>
+    <button onclick="proximo()">Ver nossas lembranças 📸</button>
+  </div>
+
+  <!-- ETAPA 3 -->
+  <div class="etapa hidden" id="etapa3">
+    <h2>Nossas lembranças 📷</h2>
+    <div class="galeria">
+      <img src="assets/foto1.jpg">
+      <img src="assets/foto2.jpg">
+      <img src="assets/foto3.jpg">
+      <img src="assets/foto4.jpg">
     </div>
+    <button onclick="proximo()">Última surpresa 🎵</button>
   </div>
 
-  <div class="conteudo hidden" id="conteudo">
+  <!-- ETAPA 4 -->
+  <div class="etapa hidden" id="etapa4">
+    <h2>Uma música que me lembra você 🎶</h2>
+    <iframe width="100%" height="315"
+    src="https://www.youtube.com/embed/COLOQUE_O_ID_AQUI"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media"
+    allowfullscreen>
+    </iframe>
 
-    <section class="secao">
-      <h2>Feliz Dia dos Namorados 💞</h2>
-      <p>
-        Eu fiz esse site só pra você.  
-        Porque você merece algo único.
-      </p>
-    </section>
-
-    <section class="secao">
-      <h2>Nossas belas lembranças 📸</h2>
-      <div class="galeria">
-        <img src="assets/img/1751932483_118022306740532_1768709075334 (1).png">
-        <img src="assets/img/Screenshot_20251215_164900_Roblox.jpg">
-        <img src="assets/img/Screenshot_20260117_215645_Roblox.jpg">
-        <img src="assets/img/Screenshot_20260207_182622_Roblox.jpg">
-      </div>
-    </section>
-
-    <section class="secao">
-      <h2>Uma música só para você 🎵</h2>
-      <iframe style="border-radius:12px"
-        src="https://m.youtube.com/watch?v=0zootlQUGHo&list=RD0zootlQUGHo&start_radio=1&pp=ygUHU29sYW5pbqAHAQ%3D%3D"
-        width="100%" height="152" frameBorder="0"
-        allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-      </iframe>
-    </section>
-
+    <h3 style="margin-top:20px;">Eu te amo infinito ♾️💞</h3>
   </div>
+
+</div>
 
 <script src="script.js"></script>
 </body>
