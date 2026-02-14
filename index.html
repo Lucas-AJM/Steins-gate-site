@@ -8,49 +8,40 @@
 </head>
 <body>
 
-<div class="card">
+<div class="wrapper">
 
-  <!-- ETAPA 1 -->
-  <div class="etapa" id="etapa1">
+  <div class="card etapa" id="etapa1">
+    <h1>Você quer abri-lo? (≧◡≦)</h1>
+    <img src="assets/gatinho.png" class="imagem">
+    <button onclick="proximo()">Abra-o 💖</button>
+  </div>
+
+  <div class="card etapa hidden" id="etapa2">
     <h1>Feliz Dia dos Namorados 💕</h1>
-    <p>Eu preparei algo especial pra você...</p>
-    <button onclick="proximo()">Abrir 💌</button>
-  </div>
-
-  <!-- ETAPA 2 -->
-  <div class="etapa hidden" id="etapa2">
-    <h2>Uma cartinha pra você 💖</h2>
     <p>
-      Desde que você entrou na minha vida,
-      tudo ficou mais bonito.
-      Eu faria esse site mil vezes só pra ver você sorrir.
+      Eu sei que você talvez não esperasse isso,
+      mas eu só queria te mostrar o quanto você
+      significa pra mim.
     </p>
-    <button onclick="proximo()">Ver nossas lembranças 📸</button>
+    <button onclick="proximo()">Próximo ^w^</button>
   </div>
 
-  <!-- ETAPA 3 -->
-  <div class="etapa hidden" id="etapa3">
-    <h2>Nossas lembranças 📷</h2>
+  <div class="card etapa hidden" id="etapa3">
+    <h2>Nossas lembranças 📸</h2>
     <div class="galeria">
       <img src="assets/foto1.jpg">
       <img src="assets/foto2.jpg">
-      <img src="assets/foto3.jpg">
-      <img src="assets/foto4.jpg">
     </div>
     <button onclick="proximo()">Última surpresa 🎵</button>
   </div>
 
-  <!-- ETAPA 4 -->
-  <div class="etapa hidden" id="etapa4">
-    <h2>Uma música que me lembra você 🎶</h2>
-    <iframe width="100%" height="315"
-    src="https://www.youtube.com/embed/0zootlQUGHo"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media"
-    allowfullscreen>
+  <div class="card etapa hidden" id="etapa4">
+    <h2>Uma música só para você 🎶</h2>
+    <iframe 
+      src="https://www.youtube.com/embed/0zootlQUGHo"
+      allowfullscreen>
     </iframe>
-
-    <h3 style="margin-top:20px;">Eu te amo infinito ♾️💞</h3>
+    <p>Eu te amo infinito ♾️</p>
   </div>
 
 </div>
