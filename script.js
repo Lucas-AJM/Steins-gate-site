@@ -5,12 +5,10 @@ etapas[0].classList.add("ativa");
 
 function proximo() {
   etapas[etapaAtual].classList.remove("ativa");
-
+  
   etapaAtual++;
 
   if (etapaAtual < etapas.length) {
-    setTimeout(() => {
-      etapas[etapaAtual].classList.add("ativa");
-    }, 50);
+    etapas[etapaAtual].classList.add("ativa");
   }
 }
