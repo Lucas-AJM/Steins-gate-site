@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Para Você 💖</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para o meu amor 💌</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container" id="tela1">
-        <h1>Esse site foi feito exclusivamente para você...</h1>
-        <button onclick="entrar()">💖 Sou eu</button>
+  <div class="card">
+    <h1>Você quer abrir-lo? (≧◡≦)</h1>
+    <img src="assets/gatinho.png" class="cat">
+
+    <div class="buttons">
+      <button onclick="abrir()">Abra-o 💖</button>
+      <button class="no">Não, obrigado.</button>
     </div>
+  </div>
 
-    <div class="container hidden" id="tela2">
-        <h1>Feliz Dia dos Namorados ❤️</h1>
-        <p>
-            Desde que você entrou na minha vida, tudo ficou diferente.
-            Mesmo longe, você consegue estar perto.
-            Obrigado por existir comigo.
-        </p>
+  <div class="conteudo hidden" id="conteudo">
 
-        <button onclick="surpresa()">Clique aqui se você quer saber o quanto eu te amo</button>
+    <section class="secao">
+      <h2>Feliz Dia dos Namorados 💞</h2>
+      <p>
+        Eu fiz esse site só pra você.  
+        Porque você merece algo único.
+      </p>
+    </section>
 
-        <div id="mensagemFinal" class="hidden">
-            <h2>Eu te amo infinito ♾️</h2>
-        </div>
-    </div>
+    <section class="secao">
+      <h2>Nossas belas lembranças 📸</h2>
+      <div class="galeria">
+        <img src="assets/foto1.jpg">
+        <img src="assets/foto2.jpg">
+        <img src="assets/foto3.jpg">
+        <img src="assets/foto4.jpg">
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section class="secao">
+      <h2>Uma música só para você 🎵</h2>
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/track/COLOCA_AQUI_O_LINK"
+        width="100%" height="152" frameBorder="0"
+        allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+      </iframe>
+    </section>
+
+  </div>
+
+<script src="script.js"></script>
 </body>
 </html>
