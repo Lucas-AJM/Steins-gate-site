@@ -1,11 +1,17 @@
 let etapaAtual = 0;
 const etapas = document.querySelectorAll(".etapa");
 
+// ativa a primeira etapa quando carrega
+etapas[0].classList.add("ativa");
+
 function proximo() {
-  etapas[etapaAtual].classList.add("hidden");
+  // remove a etapa atual
+  etapas[etapaAtual].classList.remove("ativa");
+
   etapaAtual++;
 
+  // ativa a próxima etapa se existir
   if (etapaAtual < etapas.length) {
-    etapas[etapaAtual].classList.remove("hidden");
+    etapas[etapaAtual].classList.add("ativa");
   }
 }
