@@ -1,14 +1,11 @@
 let etapaAtual = 0;
 const etapas = document.querySelectorAll(".etapa");
 
-etapas[0].classList.add("ativa");
-
 function proximo() {
-  etapas[etapaAtual].classList.remove("ativa");
-  
+  etapas[etapaAtual].classList.add("hidden");
   etapaAtual++;
 
   if (etapaAtual < etapas.length) {
-    etapas[etapaAtual].classList.add("ativa");
+    etapas[etapaAtual].classList.remove("hidden");
   }
 }
